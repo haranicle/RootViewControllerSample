@@ -34,8 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         rootViewController.switchState(to: .home)
-        let vcs = [ FirstViewController(), SecondViewController() ]
-        rootViewController.homeNavigationViewController.setViewControllers(vcs, animated: false)
+        let vcList = [ FirstViewController(), SecondViewController() ]
+        rootViewController.homeNavigationViewController.setViewControllers(vcList, animated: false)
         return true
     }
 
